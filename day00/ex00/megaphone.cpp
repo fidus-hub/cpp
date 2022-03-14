@@ -14,8 +14,6 @@ int main(int argc, char **argv)
             for (size_t j = 0; j < str.length(); j++)
                 str[j] = std::toupper(str[j]);
             std::cout << str;
-            if (i != argc -1)
-                std::cout << ' ';
         }
         std::cout << std::endl;
     }
