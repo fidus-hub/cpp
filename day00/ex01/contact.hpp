@@ -13,18 +13,18 @@
 
 class       Contact
 {
-        string    first_name;
-        string    last_name;
-        string    nickname;
-        string    phone_number;
-        string    darkest_secret;
+        string    _first_name;
+        string    _last_name;
+        string    _nickname;
+        string    _phone_number;
+        string    _darkest_secret;
   	public:
-		void	setInfo();
-		string	getFname();
-		string	getLname();
-		string	getNname();
-		string	getDsecret();
-		string	getPnumber();
+		void	SetInfo();
+		string	GetFname();
+		string	GetLname();
+		string	GetNname();
+		string	GetDsecret();
+		string	GetPnumber();
 
 };
 

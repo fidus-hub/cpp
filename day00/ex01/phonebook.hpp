@@ -4,8 +4,7 @@
 
 class           PhoneBook
 {
-     Contact    contact[8];
-
+          Contact    _contact[8];
      public:
           void       add(int index);
           void       search(int index); 
