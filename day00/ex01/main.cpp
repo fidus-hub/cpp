@@ -13,7 +13,7 @@ int main()
         cout << "You want to ADD ?, SEARCH or EXIT? : ";
         getline(cin, cmd);
         if (i >= 8)
-            index i % 8;
+            index = i % 8;
         if (cmd == "ADD")
         {
             pb.add(index);

@@ -3,6 +3,7 @@
 #include <iostream>
 #include <string>
 #include <iomanip>
+#include <cctype>
 
 # define	string std::string
 # define	cout std::cout
@@ -13,11 +14,11 @@
 
 class       Contact
 {
-        string    _first_name;
-        string    _last_name;
+        string    _firstName;
+        string    _lastName;
         string    _nickname;
-        string    _phone_number;
-        string    _darkest_secret;
+        string    _phoneNumber;
+        string    _darkestSecret;
   	public:
 		void	SetInfo();
 		string	GetFname();
