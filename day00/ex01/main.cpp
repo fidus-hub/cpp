@@ -24,8 +24,10 @@ int main()
         {
             if (i == 0)
                 cout << "Contact list is empty" << endl;
+            else if (i == 8)
+                pb.printContact(8);
             else
-                pb.search(i);
+                pb.printContact(i);
         }
         else if (cmd == "EXIT")
             exit (0);

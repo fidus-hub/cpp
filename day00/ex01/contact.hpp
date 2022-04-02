@@ -10,6 +10,8 @@
 # define	cin std::cin
 # define	endl std::endl
 # define	setw std::setw
+# define	setfill std::setfill
+# define	left std::left
 # define 	getline std::getline
 
 class       Contact

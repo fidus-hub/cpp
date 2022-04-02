@@ -7,7 +7,7 @@ class           PhoneBook
           Contact    _contact[8];
      public:
           void       add(int index);
-          void       search(int index); 
+          void       printContact(int index); 
           void       exit(int index);
 };
 #endif
