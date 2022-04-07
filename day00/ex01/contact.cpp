@@ -22,6 +22,31 @@ int ft_isdigit(string s)
     return(0);
 }
 
+string  Contact::GetFname()
+{
+    return(_firstName);
+}
+
+string  Contact::GetLname()
+{
+    return(_lastName);
+}
+
+string  Contact::GetNname()
+{
+    return(_nickname);
+}
+
+string  Contact::GetDsecret()
+{
+    return(_darkestSecret);
+}
+
+string  Contact::GetPnumber()
+{
+    return(_phoneNumber);
+}
+
 void Contact::SetInfo()
 {
     cout << "Enter First Name: ";
