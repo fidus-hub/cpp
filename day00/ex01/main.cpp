@@ -1,5 +1,5 @@
-#include "Phonebook.hpp"
-#include "Contact.hpp"
+#include "phonebook.hpp"
+#include "contact.hpp"
 
 int main()
 {
@@ -24,7 +24,7 @@ int main()
         {
             if (i == 0)
                 cout << "Contact list is empty" << endl;
-            else if (i == 8)
+            else if (i >= 8)
                 pb.printContact(8);
             else
                 pb.printContact(i);

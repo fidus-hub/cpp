@@ -1,5 +1,5 @@
-#include "Phonebook.hpp"
-#include "Contact.hpp"
+#include "phonebook.hpp"
+#include "contact.hpp"
 
 int ft_isascii(string s)
 {
