@@ -48,7 +48,7 @@ void PhoneBook::printContact(int index)
 				return;
 			ID = str[0] - 48;
 			if (str.length() > 1 || ID > index - 1)
-				cout << "its empthy" << endl;
+				cout << "its empty" << endl;
 			else
 				searchForContact(ID);
 		
