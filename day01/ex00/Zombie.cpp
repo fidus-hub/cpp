@@ -13,5 +13,5 @@ Zombie::Zombie(string name)
 
 Zombie::~Zombie()
 {
-	cout << "Zombie name :" << _name << endl; 
+	cout << _name << " Destroyed" << endl; 
 }

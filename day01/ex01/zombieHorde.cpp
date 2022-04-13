@@ -2,13 +2,15 @@
 
 Zombie*	zombieHorde(int N, string name)
 {
+	int i = 0;
 	Zombie* zombies;
 	zombies = new Zombie[N];
 	string newName;
-	while (N--)
+	while (i < N)
 	{
-		newName = name + std::to_string(N);
-		zombies[N].setName(newName);
+		newName = name + std::to_string(i);
+		zombies[i].setName(newName);
+		i++;
 	}
 	return (zombies);
 }

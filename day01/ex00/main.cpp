@@ -2,8 +2,11 @@
 
 int main()
 {
-	Zombie Zombie1 = Zombie("Zombie Uno");
-	Zombie *newZ = newZombie("new ugly Zombie");
+	Zombie Zombie1("Zombie Uno");
+	Zombie* Heap;
+
+	Heap = newZombie("new ugly Zombie");
+
 	randomChump("Random ugly Zombie");
-	delete newZ;
+	delete Heap;
 }

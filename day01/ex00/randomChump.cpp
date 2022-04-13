@@ -2,5 +2,5 @@
 
 void randomChump(string name)
 {
-	Zombie newZombie(name);
+	Zombie Zombie(name);
 }
