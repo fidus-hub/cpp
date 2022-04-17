@@ -1,6 +1,6 @@
-NAME = Humain
+NAME = Harl
 
-SRC =	main.cpp Weapon.cpp HumanA.cpp HumanB.cpp 
+SRC =	main.cpp Harl.cpp
 
 CC = c++  -std=c++98
 
