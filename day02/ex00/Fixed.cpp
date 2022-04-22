@@ -12,14 +12,15 @@ Fixed::~Fixed()
 
 Fixed::Fixed(const Fixed &obj)
 {
-	_fixed = obj._fixed;
 	std::cout << "Copy constuctor called" << std::endl;
+	*this = obj;
 }
 
 Fixed &Fixed::operator=(const Fixed &obj)
 {
-	this->_fixed = obj._fixed;
 	std::cout << "Copy Assignment operator called" << std::endl;
+	this->_fixed = obj.getRawBits();
+	// b->_fixed = a->fixed
 	return (*this);
 }
 

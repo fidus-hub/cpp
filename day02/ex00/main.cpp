@@ -2,7 +2,7 @@
 
 int main(void)
 {
-	Fixed a;
+	Fixed a;// kadkhlel ldefault constructor,-->_fixed=0
 	Fixed b( a );
 	Fixed c;
 	c = b;
