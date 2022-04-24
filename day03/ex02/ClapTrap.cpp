@@ -6,7 +6,7 @@
 
 ClapTrap::ClapTrap()
 {
-	std::cout << "ClapTrap constructor called" << std::endl;
+	std::cout << "ClapTrap Default constructor called" << std::endl;
 }
 
 ClapTrap::ClapTrap( const ClapTrap & src )
@@ -16,6 +16,7 @@ ClapTrap::ClapTrap( const ClapTrap & src )
 
 ClapTrap::ClapTrap( std::string name) : _Name(name)
 {
+	std::cout << "ClapTrap constructor called" << std::endl;
 	this->_HitPoints = 10;
 	this->_energyPoints = 10;
 	this->_attackDamage = 0;
