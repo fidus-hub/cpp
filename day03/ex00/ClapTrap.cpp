@@ -58,6 +58,7 @@ std::ostream &			operator<<( std::ostream & o, ClapTrap  & i)
 /*
 ** --------------------------------- METHODS ----------------------------------
 */
+
 void ClapTrap::attack(const std::string& target)
 {
 	std::cout << "ClapTrap " + this->_Name + " attack " + target + " causing " << this->_attackDamage << " points of damage!"<< std::endl;
