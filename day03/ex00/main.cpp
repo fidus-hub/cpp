@@ -12,14 +12,18 @@
 
 int main()
 {
-	ClapTrap A("Fidus");
-	ClapTrap B("Fibo");
+	ClapTrap A("Luffy");
+	ClapTrap B("Kaido");
 
-	//std::cout << A.getAttackDamage() << std::endl;
+	std::cout << "game begins : " << std::endl;
+	std::cout << A << std::endl;
+	std::cout << B << std::endl;
 
 	A.attack(B.getName());
 	B.takeDamage(A.getAttackDamage());
 	B.beRepaired(10);
+
+	std::cout << "game over : " << std::endl;
 	std::cout << A << std::endl;
 	std::cout << B << std::endl;
 }
