@@ -43,6 +43,12 @@ ScavTrap::~ScavTrap()
 /*
 ** --------------------------------- METHODS ----------------------------------
 */
+void ScavTrap::attack(const std::string& target)
+{
+	std::cout << "ScavTrap " + this->_Name + " attack " + target + " causing " << this->_attackDamage << " points of damage!"<< std::endl;
+	this->_energyPoints -= 1;
+}
+
 void	ScavTrap::guardGate( void )
 {
 	std::cout << _Name << " is in Gate guardian mode!" << std::endl;
