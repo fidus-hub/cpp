@@ -3,7 +3,7 @@
 
 int main(void)
 {
-	//Animal anml;
+	//Animal test;
 	Animal *animals[4];
 
 	for (int i = 0; i < 4; i++)

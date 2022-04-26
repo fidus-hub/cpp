@@ -7,14 +7,13 @@
 Dog::Dog()
 {
 	_type = "Dog";
-	 _brain = new Brain();
+	_brain = new Brain();
 	std::cout << "Dog Default constructor called" << std::endl;
 }
 
 Dog::Dog( const Dog & src )
 {
-	_type = src._type;
-	_brain = new Brain(*(src._brain));
+	*this = src;
 }
 
 /*

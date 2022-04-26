@@ -31,4 +31,5 @@ int main(void)
 	std::cout << "Cat2 brain: " << Cat2.getBrain() << std::endl;
 	
 	return 0;
+
 }
