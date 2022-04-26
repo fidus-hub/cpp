@@ -1,17 +1,15 @@
-#include "Cat.hpp"
+#include "WrongAnimal.hpp"
 
 /*
 ** ------------------------------- CONSTRUCTOR --------------------------------
 */
 
-Cat::Cat()
+WrongAnimal::WrongAnimal()
 {
-	_type = "cat";
-	_brain = new Brain();
-	std::cout << "Cat Default constructor called" << std::endl;
+	std::cout << "WrongAnimal default constructor called!" << std::endl;
 }
 
-Cat::Cat( const Cat & src )
+WrongAnimal::WrongAnimal( const WrongAnimal & src )
 {
 	*this = src;
 }
@@ -21,39 +19,41 @@ Cat::Cat( const Cat & src )
 ** -------------------------------- DESTRUCTOR --------------------------------
 */
 
-Cat::~Cat()
+WrongAnimal::~WrongAnimal()
 {
-	delete _brain;
-	std::cout << "Cat Destructor called" << std::endl;
+	std::cout << "WrongAnimal destructor called!" << std::endl;
 }
 
 
 /*
 ** --------------------------------- OVERLOAD ---------------------------------
 */
-Cat &		Cat::operator=( Cat const & rhs )
+WrongAnimal &	WrongAnimal::operator=( WrongAnimal const & src )
 {
-	_type = rhs._type;
-	_brain = new Brain(*(rhs._brain));
+	_Type = src._Type;
 	return *this;
 }
+
 
 /*
 ** --------------------------------- METHODS ----------------------------------
 */
-
-void	Cat::makeSound() const
+void WrongAnimal::makeSound()const
 {
-	std::cout << "Purrrrr" << std::endl;
+	std::cout << "WrongANIMAL need a sound!" << std::endl;
 }
 
 /*
 ** --------------------------------- ACCESSOR ---------------------------------
 */
-Brain*	Cat::getBrain( void )
+void WrongAnimal::setType(std::string type)
 {
-	return this->_brain;
+	_Type = type;
 }
 
+std::string	WrongAnimal::getType(void) const
+{
+	return _Type;
+}
 
 /* ************************************************************************** */

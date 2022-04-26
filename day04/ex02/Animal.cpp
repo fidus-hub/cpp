@@ -1,19 +1,15 @@
-#include "Brain.hpp"
+#include "Animal.hpp"
 
 /*
 ** ------------------------------- CONSTRUCTOR --------------------------------
 */
 
-Brain::Brain()
+Animal::Animal()
 {
-	for(int i = 0; i < 100; i++)
-	{
-		this->ideas[i] = "Idea " + std::to_string(i);
-	}
-	std::cout << "Brain Default constructor called" << std::endl;
+	std::cout << "Animal Default constructor called" << std::endl;
 }
 
-Brain::Brain( const Brain & src )
+Animal::Animal( const Animal & src )
 {
 	*this = src;
 }
@@ -23,42 +19,40 @@ Brain::Brain( const Brain & src )
 ** -------------------------------- DESTRUCTOR --------------------------------
 */
 
-Brain::~Brain()
+Animal::~Animal()
 {
-	std::cout << "Brain Destructor called" << std::endl;
+	std::cout << "Animal Destructor called" << std::endl;
 }
 
 
 /*
 ** --------------------------------- OVERLOAD ---------------------------------
 */
-
-Brain &				Brain::operator=( Brain const & rhs )
+Animal &				Animal::operator=(Animal const & rhc)
 {
-	if ( this != &rhs )
-	{
-		for(int i = 0; i < 100; i++)
-		{
-			this->ideas[i] = rhs.ideas[i];
-		}
-	}
+	_type = rhc._type;
 	return *this;
 }
-
 
 /*
 ** --------------------------------- METHODS ----------------------------------
 */
-	void Brain::printIdeas()
-	{
-	for(int i = 0; i < 100; i++)
-	{
-		std::cout << ideas[i] << std::endl;
-	}		
-	}
+void Animal::makeSound() const
+{
+	std::cout << "ANIMAL need a sound!" << std::endl;
+}
+
 /*
 ** --------------------------------- ACCESSOR ---------------------------------
 */
+void Animal::setType(std::string type)
+{
+	_type = type;
+}
 
+std::string	Animal::getType(void) const
+{
+	return _type;
+}
 
 /* ************************************************************************** */
