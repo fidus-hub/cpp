@@ -10,7 +10,7 @@ int	main( void )
 	std::cout << Clap << std::endl;
 
 	Clap.attack(Frag.getName());
-	Clap.takeDamage(Frag.getAttackDamage());
+	Clap.takeDamage(	Frag.getAttackDamage());
 	Clap.beRepaired(10);
 
 	Frag.attack(Clap.getName());

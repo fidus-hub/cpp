@@ -15,5 +15,9 @@ int main( void )
 
 	std::cout << Fixed::max( a, b ) << std::endl;
 
+	//if (a<b)
+	//	std::cout << "yes" << std::endl;
+	//else
+	//	std::cout << "yes" << std::endl;
 	return 0;
 }

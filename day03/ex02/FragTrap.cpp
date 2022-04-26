@@ -41,6 +41,11 @@ FragTrap::~FragTrap()
 /*
 ** --------------------------------- METHODS ----------------------------------
 */
+void FragTrap::attack(const std::string& target)
+{
+	std::cout << "FragTrap " + this->_Name + " attack " + target + " causing " << this->_attackDamage << " points of damage!"<< std::endl;
+	this->_energyPoints -= 1;
+}
 
 void FragTrap::highFivesGuy(void)
 {
