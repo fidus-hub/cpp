@@ -1,4 +1,5 @@
 #include "Bureaucrat.hpp"
+#include "Form.hpp"
 
 /*
 ** ------------------------------- CONSTRUCTOR --------------------------------
@@ -78,6 +79,14 @@ const char* Bureaucrat::GradeTooHighException::what() const throw()
 const char* Bureaucrat::GradeTooLowException::what() const throw()
 {
 	return ("Grade is too low");
+}
+
+void	Bureaucrat::signForm(Form &obj)
+{
+	if (obj.getGradeState())
+		std::cout << this->_Name << " signs " << obj.getName() << std::endl;
+	else
+		std::cout << this->_Name << "cannot signs " << obj.getName() <<" need a higher grade "<<std::endl;
 }
 /*
 ** --------------------------------- ACCESSOR ---------------------------------
