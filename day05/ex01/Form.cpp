@@ -43,10 +43,13 @@ Form &				Form::operator=( Form const & rhs )
 
 std::ostream &			operator<<( std::ostream & o, Form const & i )
 {
+	o << "Form name: " << i.getName() << std::endl;
+	o << "Sign Grade: " << i.getSignGrade() << std::endl;
+	o << "Execution Grade: " << i.getExecGrade() << std::endl;
 	if (i.getGradeState() == true)
-		o <<"The Bureaucrat can sign the form and is currently signed";
+		o <<"the form is currently signed";
 	else
-		o << "The Bureaucrat can't sign the form and is currently not signed";
+		o << "The form is currently not signed";
 	return o;
 }
 

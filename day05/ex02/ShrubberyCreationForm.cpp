@@ -83,7 +83,7 @@ void	ShrubberyCreationForm::execute(Bureaucrat const &executor) const
 	ofs << "    .       .   | |   .    ' '-.                 \n";
 	ofs << "    ___________/  |____________                  \n";
 	ofs << "   /  hadi fkhater taouil ali   |                \n";
-	ofs << "  |  o Mashad Oussama Ayoub     |                \n";
+	ofs << "  |  o Mashad Oussama Ayoub omar|                \n";
 	ofs << "  |  o Omaima o Houda o ziyad   |                \n";
 	ofs << "  | o manssawch Haitm o Souhail |                \n";
 	ofs << "  |____________________________/                 \n";

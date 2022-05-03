@@ -13,7 +13,7 @@ class ShrubberyCreationForm: public Form
 		ShrubberyCreationForm( ShrubberyCreationForm const & src );
 		~ShrubberyCreationForm();
 
-		void	execute(Bureaucrat const &person) const;
+		void	execute(Bureaucrat const & executor) const;
 
 		ShrubberyCreationForm &		operator=( ShrubberyCreationForm const & rhs );
 

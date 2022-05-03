@@ -2,7 +2,7 @@
 
 int main()
 {
-	Bureaucrat person("chef", 1);
+	Bureaucrat person("chef", 2);
 	std::cout << person << std::endl;
 	try
 	{
