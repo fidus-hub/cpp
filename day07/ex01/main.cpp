@@ -1,14 +1,15 @@
 #include "iter.hpp"
 
-void    Uper(char word)
+
+void	Uper(const char & word)
 {
-    if (word > 96 && word < 123)
-        std::cout << (char)(word - 32);
-    else
+	if (word > 96 && word < 123)
+		std::cout << (char)(word - 32);
+	else
 		std::cout << (char)(word);
 }
 
-void Print(int array)
+void Print(const int & array)
 {
 	std::cout << array << " ";
 }

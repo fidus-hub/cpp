@@ -1,6 +1,31 @@
 #include "array.hpp"
 
 #define MAX_VAL 750
+
+class Awesome
+{
+	public:
+	Awesome( void ) : _n( 42 )
+	{
+		return;
+	}
+
+	int get( void ) const
+	{
+		return this->_n;
+	}
+
+	private:
+	int _n;
+};
+
+std::ostream & operator<<( std::ostream & o, Awesome const & rhs )
+{
+	o << rhs.get(); return o;
+}
+
+
+
 int main(int, char**)
 {
     Array<int> numbers(MAX_VAL);
@@ -48,5 +73,9 @@ int main(int, char**)
         numbers[i] = rand();
     }
     delete [] mirror;//
-    return 0;
+
+	Array<Awesome> AwesomeArray(3);
+	std::cout << AwesomeArray[1] << std::endl;
+
+	return 0;
 }
